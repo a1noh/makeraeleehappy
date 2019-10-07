@@ -97,7 +97,7 @@ class happyState extends State<happyButton> {
                           onPressed: sadPressed
                       ),
                       new RaisedButton(
-                        child: new Text("Make her simle", style: new TextStyle(
+                        child: new Text("Make her smile", style: new TextStyle(
                             color: Colors.white, fontSize: 20.0)),
                         color: Colors.yellow,
                         onPressed: jokePressed,
