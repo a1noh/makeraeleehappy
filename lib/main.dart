@@ -28,38 +28,57 @@ class happyState extends State<happyButton> {
     "You're amazing",
     "I love you",
     "You're awesome...",
-    "Purdue's prettiest girl"
+    "Purdue's prettiest girl",
+    "I want to hug you everyday...",
+    "My hon..."
   ]; // add more phrases
 
   List <String> sadString = [ // add more sad strings
     "오빠가 미안해...",
     "잘못했어...",
-    "뽀뽀해줄게..."
+    "뽀뽀해줄게...",
+    "I'm always here for you...",
+    "Honey....",
+  ];
+  List <String> sadPic = [
+    "sad.png",
+    "sad1.png"
+  ];
+
+  List <String> jokePic = [
+    "joke.png",
+    "joke1.png"
+  ];
+  List <String> happyPic = [
+    "happy.png",
+    "happy1.png"
   ];
 
   List <String> jokeStrings = [ // add more sad strings
     "박서준이 아니라서 미안해...",
     "오빠는...널위해 모든걸 줄수있어...",
-    "오빠가 다 사줄게..."
+    "오빠가 다 사줄게...",
+    "I will die for you honey",
+    "This is for you..."
   ];
 
-  String displayedString = "";
+  String displayedString = "This is Rae... \nLet's make her happy.";
   String name = "lib/images/def.png";
   void happyPressed() {
     setState(() {
-      name = "lib/images/happy.png";
+      name = "lib/images/"+ happyPic[rng.nextInt(happyPic.length)];; // need to add more photos
       displayedString = happyStrings[rng.nextInt(happyStrings.length)];
     });
   }
   void sadPressed() {
     setState(() {
-      name = "lib/images/sad.png";
+      name = "lib/images/"+ sadPic[rng.nextInt(sadPic.length)];
       displayedString = sadString[rng.nextInt(sadString.length)];
     });
   }
   void jokePressed() {
     setState(() {
-      name = "lib/images/joke.png"; // make a list of strings with the file names and randomly generate photos
+      name =  "lib/images/"+ jokePic[rng.nextInt(jokePic.length)];
       displayedString = jokeStrings[rng.nextInt(jokeStrings.length)];
     });
   }

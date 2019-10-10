@@ -41,9 +41,12 @@ flutter:
   uses-material-design: true
   assets:
     - lib/images/joke.png
+    - lib/images/joke1.png
     - lib/images/def.png
     - lib/images/happy.png
+    - lib/images/happy1.png
     - lib/images/sad.png
+    - lib/images/sad1.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
